@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: chocolate;
+}
+
+.pie-chart {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.pie-chart__svg {
+  height: 500px;
+  width: 500px;
+}
+/*# sourceMappingURL=style.css.map */

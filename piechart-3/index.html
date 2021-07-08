@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pie-chart">
+        <svg class="pie-chart__svg" height="100%" width="300" viewbox="0 0 20 20">
+
+
+            <circle class="pie-chart-hole" r="5" cx="10" cy="10" fill="transparent"></circle>
+            
+            <!--  circle red  -->
+            <circle id="pie-chart-segment2" r="5" cx="10" cy="10" fill="transparent" stroke="red" stroke-width="3" stroke-dasharray="calc(100 * 0.3141) 31.42"></circle>
+            
+            <!--  circle BLUE  -->
+            <circle id="pie-chart-segment3" r="5" cx="10" cy="10" fill="transparent" stroke="blue" stroke-width="3" stroke-dasharray="calc(60 * 0.3141) 31.42"></circle>
+            
+            <!--  circle black  -->
+            <circle id="pie-chart-segment1" r="5" cx="10" cy="10" fill="transparent" stroke="#000" stroke-width="3" stroke-dasharray="calc(30 * 0.3141) 31.42"></circle>
+
+
+        </svg>
+    </div>
+</body>
+</html>

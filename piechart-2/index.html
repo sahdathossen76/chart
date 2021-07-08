@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pie-chart">
+        <div class="pie-chart-content">
+        
+            <div class="pie-chart__valu">
+                <p>enter value: <input id="val1" type="number" /></p>
+                <p>enter value: <input id="val2" type="number" /></p>
+                <p>enter value: <input id="val3" type="number" /></p>
+                <p><button onclick="calculate()">Calculate</button></p>
+            </div>
+    
+            <svg class="pie-chart__circle donut" width="300" height="100%" viewBox="0 0 42 42">
+                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+                
+                <!--  GREEN  -->
+                <circle id="donut-segment2" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b1c94e" stroke-width="3" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                
+                <!--  BLUE  -->
+                <circle id="donut-segment3" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#aaddff" stroke-width="3" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                
+                <!--  PURPLE  -->
+                <circle id="donut-segment1" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="0 100" stroke-dashoffset="25"></circle>
+                
+                <g class="chart-text">
+                    <text x="50%" y="50%" class="chart-number" id="totalValue">
+                    0
+                    </text>
+                    <text x="50%" y="50%" class="chart-label">
+                        Total
+                    </text>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
